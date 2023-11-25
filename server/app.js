@@ -11,7 +11,6 @@ const errorHandler = require('./middleware/errorHandler');
 
 app.use(express.json())
 
-
 app.use('/api/v1/tasks',tasks)
 app.use(NotFound)
 app.use(errorHandler)

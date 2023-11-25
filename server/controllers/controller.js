@@ -2,7 +2,7 @@ const { createCustomError } = require('../error/customError')
 const asyncWrapper = require('../middleware/asyncWrapper')
 const TaskModel = require('../models/model')
 
-
+  
 const getAllTasks = asyncWrapper(async(req,res)=>{
         const tasks = await TaskModel.find({})
         res.status(200).json({tasks})
