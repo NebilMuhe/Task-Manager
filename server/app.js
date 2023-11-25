@@ -19,4 +19,4 @@ app.listen(port,()=>{
     connectDB(process.env.MONGO_URI)
     .then(()=>console.log(`Connected Sucessfully and listening on port ${port}`))
     .catch((e)=>console.log(e.message))
-}) 
+})
